@@ -36,7 +36,7 @@ class SignIn : AppCompatActivity() {
             if (InMail.isEmpty()) {
                 error(this, "Error", "Empty Mail")
                 return@setOnClickListener
-            }else{ if (Patterns.EMAIL_ADDRESS.matcher(InMail).matches()){
+            }else{ if (!Patterns.EMAIL_ADDRESS.matcher(InMail).matches()){
                 error(this, "Error", "Wrong Mail")
                 return@setOnClickListener }
             }
@@ -44,8 +44,8 @@ class SignIn : AppCompatActivity() {
         if (InPass.isEmpty()){
             error(this,"Error","Empty passeord")
             return@setOnClickListener }
-        api.login(LogB(InMail,InPass)).enqueue(object : retrofit2.Callback<Token>{
-            override fun onResponse(call: Call<Token>, response: Response<Token>) {
+        api.login(LogB(InMail,InPass)).enqueue(object : retrofit2.Callback<responstoken>{
+            override fun onResponse(call: Call<responstoken>, response: Response<responstoken>) {
                 if (response.isSuccessful && response.body() != null){
                     token = response.body()!!.token.toString()
                     startActivity(Intent(this@SignIn,Main::class.java))
@@ -53,8 +53,8 @@ class SignIn : AppCompatActivity() {
                 else error(this@SignIn,"Error","Unknown Error")
             }
 
-            override fun onFailure(call: Call<Token>, t: Throwable) {
-                error(this@SignIn,"Error",t.localizedMessage?:t.message?:"Unknown Error")
+            override fun onFailure(call: Call<responstoken>, t: Throwable) {
+                error(this@SignIn,t.message!!,t.localizedMessage?:t.message?:"unknown Error ")
             }
         })
         }}

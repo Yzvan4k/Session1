@@ -135,7 +135,7 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="18dp"
-        android:backgroundTint="#00000000"
+        android:backgroundTint="#FFFFFF"
         android:fontFamily="@font/jost_medium"
         android:insetTop="0dp"
         android:insetBottom="0dp"

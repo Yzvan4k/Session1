@@ -17,6 +17,101 @@
             android:layout_width="match_parent"
             android:layout_height="0dp">
 
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginEnd="18dp"
+                android:backgroundTint="#FFC100"
+                android:fontFamily="@font/jost_medium"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Регистрация"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView10" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/jost_medium"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:text="Назад"
+                android:textAllCaps="false"
+                android:textColor="#FFC100"
+                android:textSize="22dp"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button5"
+                app:strokeColor="#FFC100"
+                app:strokeWidth="3dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/jost_medium"
+                android:text="Повторите пароль"
+                android:textColor="#263238"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView9" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/jost_medium"
+                android:text="Пароль"
+                android:textColor="#263238"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView8" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/jost_medium"
+                android:text="Почта"
+                android:textColor="#263238"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/jost_medium"
+                android:text="Дата рождения"
+                android:textColor="#263238"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
             <TextView
                 android:id="@+id/textView14"
                 android:layout_width="wrap_content"
@@ -24,7 +119,7 @@
                 android:layout_marginStart="18dp"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/jost_medium"
-                android:text="Имя"
+                android:text="Пол"
                 android:textColor="#263238"
                 android:textSize="14dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -112,7 +207,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView14">
 
                 <EditText
-                    android:id="@+id/editMail"
+                    android:id="@+id/editSex"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
@@ -120,7 +215,7 @@
                     android:backgroundTint="#00FFFFFF"
                     android:ems="10"
                     android:fontFamily="@font/jost_medium"
-                    android:hint="Тицкий"
+                    android:hint="Мужчина/Женщина"
                     android:inputType="textPersonName"
                     android:textColorHint="#263238" />
             </androidx.cardview.widget.CardView>
@@ -192,7 +287,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView8">
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/editLastname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="14dp"
@@ -201,6 +296,114 @@
                     android:ems="10"
                     android:fontFamily="@font/jost_medium"
                     android:hint="Тицкий"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#263238" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="18dp"
+                android:backgroundTint="#E6E6E6"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+                <EditText
+                    android:id="@+id/editdateofBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:ems="10"
+                    android:fontFamily="@font/jost_medium"
+                    android:hint="28 февраля 1991"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#263238" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView8"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="18dp"
+                android:backgroundTint="#E6E6E6"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16">
+
+                <EditText
+                    android:id="@+id/editMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:ems="10"
+                    android:fontFamily="@font/jost_medium"
+                    android:hint="example@mail.ru"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#263238" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView9"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="18dp"
+                android:backgroundTint="#E6E6E6"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+                <EditText
+                    android:id="@+id/editPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:ems="10"
+                    android:fontFamily="@font/jost_medium"
+                    android:hint="********************"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#263238" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView10"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="18dp"
+                android:backgroundTint="#E6E6E6"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+                <EditText
+                    android:id="@+id/editPass2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:ems="10"
+                    android:fontFamily="@font/jost_medium"
+                    android:hint="********************"
                     android:inputType="textPersonName"
                     android:textColorHint="#263238" />
             </androidx.cardview.widget.CardView>
