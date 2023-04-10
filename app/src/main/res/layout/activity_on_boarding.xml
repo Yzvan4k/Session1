@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:tabBackground="@drawable/selector"
-        app:tabIndicatorColor="#000000">
+        app:tabIndicatorColor="#00000000">
 
 
     </com.google.android.material.tabs.TabLayout>

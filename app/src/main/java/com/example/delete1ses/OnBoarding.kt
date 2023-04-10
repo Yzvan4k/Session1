@@ -37,6 +37,8 @@ class OnBoarding : AppCompatActivity() {
             }
         })
         pagerview.adapter = ViewPagerAdapter(list)
+        pagerview.isUserInputEnabled = false
+        pagerview.adapter
         button.setOnClickListener {
             if (pagerview.currentItem == 2){
                 startActivity(Intent(this,SignIn::class.java)) }
